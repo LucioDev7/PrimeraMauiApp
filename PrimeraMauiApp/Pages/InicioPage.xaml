@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeraMauiApp.Pages.InicioPage"
+             Title="InicioPage">
+    <VerticalStackLayout BackgroundColor="{StaticResource FondoPaginaVerdeRaro}">
+        <Label 
+            Text="App Libros"
+            FontSize="Large"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <HorizontalStackLayout>
+            <Button Text="Libros"
+                Style="{StaticResource StyleButton}"
+                Clicked="Button_Clicked"/>
+            <Button Text="Controles Comunes"
+                x:Name="btnControlesComunes"
+                Style="{StaticResource StyleButton}"
+                Clicked="btnControlesComunes_Clicked"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

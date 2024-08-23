@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeraMauiApp.Pages.ControlesComunesPage"
+             Title="ControlesComunesPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid ColumnDefinitions="*, 3*, *" RowDefinitions="*, *, *, *, *, *" BackgroundColor="BurlyWood" Style="{StaticResource StyleGrid}">
+                <Label Text="Controles Comunes NET MAUI" Grid.ColumnSpan="3" FontSize="Header"/>
+                <Label Text="Label" Grid.Column="0" Grid.Row="1"/>
+                <Label Text="Permite mostrar texto en pantalla" Grid.Column="1" Grid.Row="1" />
+                <Label Text="Ejemplo" Grid.Column="2" Grid.Row="1"/>
+
+                <Frame Grid.ColumnSpan="3" Margin="10" Padding="10" BackgroundColor="White" CornerRadius="10" HasShadow="True">
+                    <Label Text="Controles Comunes NET MAUI" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+
+                <Label Text="Label" Grid.Column="0" Grid.Row="1" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite mostrar texto en pantalla" Grid.Column="1" Grid.Row="1" Padding="5"/>
+                <Label Text="Ejemplo" Grid.Column="2" Grid.Row="1" HorizontalOptions="End" VerticalOptions="Center" Padding="5"/>
+
+                <Label Text="Button" Grid.Column="0" Grid.Row="2" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite crear botones en pantalla" Grid.Column="1" Grid.Row="2" Padding="5"/>
+                <Button Text="Guardar" Grid.Column="2" Grid.Row="2" WidthRequest="80" BackgroundColor="LightBlue" TextColor="White" BorderColor="DarkBlue" CornerRadius="5"/>
+
+                <Label Text="BoxView" Grid.Column="0" Grid.Row="3" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite crear cuadros de color" Grid.Column="1" Grid.Row="3" Padding="5"/>
+                <BoxView BackgroundColor="LightCoral" Grid.Column="2" Grid.Row="3" WidthRequest="100" HeightRequest="50" CornerRadius="5"/>
+
+                <Label Text="DatePicker" Grid.Column="0" Grid.Row="4" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite seleccionar una fecha" Grid.Column="1" Grid.Row="4" Padding="5"/>
+                <DatePicker Grid.Column="2" Grid.Row="4" Margin="5"/>
+
+                <Label Text="TimePicker" Grid.Column="0" Grid.Row="5" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite seleccionar una hora" Grid.Column="1" Grid.Row="5" Padding="5"/>
+                <TimePicker BackgroundColor="LightYellow" Grid.Column="2" Grid.Row="5" Margin="5"/>
+
+                <Label Text="Entry" Grid.Column="0" Grid.Row="6" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite ingresar texto en un campo de entrada" Grid.Column="1" Grid.Row="6" Padding="5"/>
+                <Entry Placeholder="Ingrese texto" Grid.Column="2" Grid.Row="6" Margin="5"/>
+
+                <Label Text="Editor" Grid.Column="0" Grid.Row="7" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite ingresar texto de múltiples líneas" Grid.Column="1" Grid.Row="7" Padding="5"/>
+                <Editor Placeholder="Ingrese texto aquí" Grid.Column="2" Grid.Row="7" HeightRequest="100" Margin="5"/>
+
+                <Label Text="Switch" Grid.Column="0" Grid.Row="8" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite alternar entre dos estados" Grid.Column="1" Grid.Row="8" Padding="5"/>
+                <Switch Grid.Column="2" Grid.Row="8" Margin="5"/>
+
+                <Label Text="Slider" Grid.Column="0" Grid.Row="9" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite seleccionar un valor dentro de un rango" Grid.Column="1" Grid.Row="9" Padding="5"/>
+                <Slider Minimum="0" Maximum="100" Grid.Column="2" Grid.Row="9" Margin="5"/>
+
+                <Label Text="ProgressBar" Grid.Column="0" Grid.Row="10" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Muestra el progreso de una operación" Grid.Column="1" Grid.Row="10" Padding="5"/>
+                <ProgressBar Progress="0.5" Grid.Column="2" Grid.Row="10" WidthRequest="100" Margin="5"/>
+
+                <Label Text="ActivityIndicator" Grid.Column="0" Grid.Row="11" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Muestra una animación de carga" Grid.Column="1" Grid.Row="11" Padding="5"/>
+                <ActivityIndicator IsRunning="True" Grid.Column="2" Grid.Row="11" WidthRequest="50" HeightRequest="50" Margin="5"/>
+
+                <Label Text="Image" Grid.Column="0" Grid.Row="12" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Muestra una imagen en pantalla" Grid.Column="1" Grid.Row="12" Padding="5"/>
+                <Image Source="https://http2.mlstatic.com/D_NQ_NP_2X_829576-MLA49765997476_042022-F.webp" Grid.Column="2" Grid.Row="12" WidthRequest="100" HeightRequest="100" Margin="5"/>
+
+                <Label Text="SearchBar" Grid.Column="0" Grid.Row="13" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite buscar texto en la aplicación" Grid.Column="1" Grid.Row="13" Padding="5"/>
+                <SearchBar Grid.Column="2" Grid.Row="13" Placeholder="Buscar..." Margin="5"/>
+
+                <Label Text="RadioButton" Grid.Column="0" Grid.Row="14" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite seleccionar una opción de un grupo" Grid.Column="1" Grid.Row="14" Padding="5"/>
+                <StackLayout Grid.Column="2" Grid.Row="14" Orientation="Vertical" Margin="5">
+                    <RadioButton Content="Opción 1"/>
+                    <RadioButton Content="Opción 2"/>
+                    <RadioButton Content="Opción 3"/>
+                </StackLayout>
+
+                <Label Text="Stepper" Grid.Column="0" Grid.Row="15" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Permite seleccionar un valor numérico" Grid.Column="1" Grid.Row="15" Padding="5"/>
+                <Stepper Grid.Column="2" Grid.Row="15" Minimum="0" Maximum="10" Increment="1" Margin="0"/>
+
+                <Label Text="WebView" Grid.Column="0" Grid.Row="16" FontSize="Medium" FontAttributes="Bold" Padding="5"/>
+                <Label Text="Muestra contenido web" Grid.Column="1" Grid.Row="16" Padding="5"/>
+                <WebView Source="https://www.google.com" Grid.Column="2" Grid.Row="16" WidthRequest="300" HeightRequest="300" Margin="5"/>
+
+                <Label Text="ListView" Grid.Column="0" Grid.Row="17"/>
+                <Label Text="Muestra una lista desplazanle de elementos con plantillas de celdas" Grid.Column="1" Grid.Row="17"/>
+                <ListView Grid.Row="18" Grid.Column="2" ItemsSource="{Binding Fruits}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding}"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+            //Buenas
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
