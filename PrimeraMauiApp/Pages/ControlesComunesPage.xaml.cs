@@ -4,7 +4,7 @@ namespace PrimeraMauiApp.Pages;
 
 public partial class ControlesComunesPage : ContentPage
 {
-    public ObservableCollection<string> Fruits { get; set; }
+    public ObservableCollection<string> Fruits { get; set; } = new ObservableCollection<string>();
     public ControlesComunesPage()
 	{
 		InitializeComponent();

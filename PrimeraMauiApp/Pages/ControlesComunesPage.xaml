@@ -5,7 +5,7 @@
              Title="ControlesComunesPage">
     <ScrollView>
         <VerticalStackLayout>
-            <Grid ColumnDefinitions="*, 3*, *" RowDefinitions="*, *, *, *, *, *" BackgroundColor="BurlyWood" Style="{StaticResource StyleGrid}">
+            <Grid ColumnDefinitions="*, 3*, *" RowDefinitions="*, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *" BackgroundColor="BurlyWood" Style="{StaticResource StyleGrid}">
                 <Label Text="Controles Comunes NET MAUI" Grid.ColumnSpan="3" FontSize="Header"/>
                 <Label Text="Label" Grid.Column="0" Grid.Row="1"/>
                 <Label Text="Permite mostrar texto en pantalla" Grid.Column="1" Grid.Row="1" />
@@ -85,7 +85,7 @@
 
                 <Label Text="ListView" Grid.Column="0" Grid.Row="17"/>
                 <Label Text="Muestra una lista desplazanle de elementos con plantillas de celdas" Grid.Column="1" Grid.Row="17"/>
-                <ListView Grid.Row="18" Grid.Column="2" ItemsSource="{Binding Fruits}">
+                <ListView Grid.Row="18" Grid.Column="2" ItemsSource="{Binding Fruits}" WidthRequest="100">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <TextCell Text="{Binding}"/>
@@ -93,7 +93,6 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </Grid>
-            //Buenas
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

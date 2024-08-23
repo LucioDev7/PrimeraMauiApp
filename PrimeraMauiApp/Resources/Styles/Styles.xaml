@@ -21,12 +21,6 @@
         <Setter Property="Margin" Value="2"/>
     </Style>
 
-    <Style x:Key="StyleFrame" TargetType="Frame">
-        <Setter Property="Grid.ColumnSpan" Value="3" />
-        <Setter Property="Grid.RowSpan" Value="2" />
-        <Setter Property="BackgroundColor" Value="Beige"/>
-    </Style>
-    
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
     </Style>
